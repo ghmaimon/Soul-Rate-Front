@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/ghmaimon/Documents/Soul-Rate-Front/Front-End'
+make: Leaving directory '/home/ghmaimon/Documents/Soul-Rate-Front/Front-End'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
