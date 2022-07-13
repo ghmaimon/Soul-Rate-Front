@@ -42,7 +42,7 @@ class NavBar extends Component {
               <Link to='/news' id="itm">News</Link>
               <Link to='/login' id="itm">login</Link>
               <Link to='/sign_in' id="itm">Sign_in</Link>
-              <div>
+              {/*<div>
                 <div className="collapse" id="content">
                   <div
                     className="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column"
@@ -72,6 +72,64 @@ class NavBar extends Component {
                 <button className="btn border-0 me-3" id="menu-btn" data-bs-toggle="collapse" href="#content" role="button" aria-expanded="false" aria-controls="content">
                   <i className="bi bi-person-circle fs-2"></i>
                 </button>
+    </div>*/}
+
+
+
+
+
+
+              <div className="nav-item dropdown d-none d-md-flex me-3">
+                <a href="#" className="px-0" data-bs-toggle="dropdown" tabindex="-1">
+                  <div className="position-relative" style={{ boxshadow: '0 7px 12px 0 rgb(95 118 232 / 21%)' }}>
+                    <img src="https://via.placeholder.com/80x80.png/60a5fa/030302?text=MG" className="rounded-circle mail-img shadow" alt="media image" width="60" height="60" />
+                  </div>
+                </a>
+                <div style={{ boxShadow: 'rgb(1, 3, 15) 9px 9px 20px',width: '500px',backdropFilter:'blur(0.3rem)',borderRadius: '10px',backgroundColor:'rgb(78 6 24 / 88%)' }} className="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card" >
+                  <div className="">
+                    <div className="card-header" style={{backgroundColor:'rgb(40 0 25 / 73%)',margin: '0 7px 0 7px',borderRadius: '10px'}}>
+                      <h3 className="card-title">Profile User</h3>
+                      <button className="btn btnProfile"><span>See your Profile</span></button>
+
+                    </div>
+                    <div className="list-group list-group-flush list-group-hoverable">
+                      <div id="nav-linkDrop" className="list-group-item" >
+                        <a href="#" className="d-block">
+                          <div className="row align-items-center">
+                            <div className="col-auto">
+                            <i className="bi bi-box-arrow-left fs-1 bg-secondary p-2" style={{borderRadius:'100px'}}></i>
+                            </div>
+                            <div className="col text-truncate">
+                              <a href="#" className="h3 text-white mx-2 py-1">
+                                <h4>Logout</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+                    </div>
+                    <div className="list-group list-group-flush list-group-hoverable">
+                      <div id="nav-linkDrop" className="list-group-item" >
+                        <a href="#" className="d-block">
+                          <div className="row align-items-center">
+                            <div className="col-auto">
+                            <i className="bi bi-gear fs-1 bg-secondary p-2" style={{borderRadius:'100px'}}></i>
+                            </div>
+                            <div className="col text-truncate">
+                              <a href="#" className="h3 text-white mx-2 py-1">
+                                <h4>Options</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

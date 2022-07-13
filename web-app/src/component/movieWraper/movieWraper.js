@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import avenger from '../../images/avengers.jpg'
 import { Button } from 'bootstrap';
+
+import item1 from '../../images/item1.jpg';
+import item2 from '../../images/item2.jpg';
+import item3 from '../../images/item3.jpg';
+
 import MovieCard from '../movieCard/movieCard';
 class MoviesWraper extends Component {
 
@@ -26,7 +31,7 @@ class MoviesWraper extends Component {
     render() {
 
         return (
-            <div className="login">
+            <div className="header">
                 <div className="container">
                     <div className="row pt-5 ">
                         <div id="rowCollapse" className="row col-12">
@@ -72,15 +77,57 @@ class MoviesWraper extends Component {
                                 </div>
                             </div>
                         </div>
+                        <div className="container">
                             <div id="cardContainer" className="row">
                                 {this.state.listMovies.map((movie) => {
-                                    return (<MovieCard key={movie.id} title = {movie.title}
-                                    description = {movie.description}
-                                    link = {""}
-                                    imgSrc = {`data:image;base64,${movie.base64_image}`}
-                                    imgAlt = {"..."}/>)
+                                    return (<MovieCard key={movie.id} title={movie.title}
+                                        description={movie.description}
+                                        link={""}
+                                        imgSrc={`data:image;base64,${movie.base64_image}`}
+                                        imgAlt={"..."} />)
                                 })}
+                                <div className="col-lg-3 col-6">
+                                    <div className="card cardMovieWraper">
+                                        <img src={item1} className="card-img-top mx-auto d-bloc" alt="." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Movie 1</h5>
+                                            <p className="card-text">description ......</p>
+                                            <Link to="/moviesDetails" id="btnMoreDetails" className="btn btn-warning"><i id="iUser" className="bi bi-bookmark-plus-fill"></i>more</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-6">
+                                    <div className="card cardMovieWraper">
+                                        <img src={item1} className="card-img-top mx-auto d-bloc" alt="." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Movie 1</h5>
+                                            <p className="card-text">description ......</p>
+                                            <Link to="/moviesDetails" id="btnMoreDetails" className="btn btn-warning"><i id="iUser" className="bi bi-bookmark-plus-fill"></i>more</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-6">
+                                    <div className="card cardMovieWraper">
+                                        <img src={item1} className="card-img-top mx-auto d-bloc" alt="." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Movie 1</h5>
+                                            <p className="card-text">description ......</p>
+                                            <Link to="/moviesDetails" id="btnMoreDetails" className="btn btn-warning"><i id="iUser" className="bi bi-bookmark-plus-fill"></i>more</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-6">
+                                    <div className="card cardMovieWraper">
+                                        <img src={item1} className="card-img-top mx-auto d-bloc" alt="." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Movie 1</h5>
+                                            <p className="card-text">description ......</p>
+                                            <Link to="/moviesDetails" id="btnMoreDetails" className="btn btn-warning"><i id="iUser" className="bi bi-bookmark-plus-fill"></i>more</Link>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>

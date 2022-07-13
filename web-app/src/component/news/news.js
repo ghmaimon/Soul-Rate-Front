@@ -5,37 +5,37 @@ import './news.css'
 class News extends Component {
   render() {
     return (
-      <div className="login">
+      <div className="header">
         <div className="row">
           <div className="col-9">
             <div id="cardContainer" className="row me-4 ms-4 mt-4">
-            <h1 className='Header1'>News</h1>
-              <div id="cardMovieWraper" className="card ">
-                <img src={avenger} className="card-img-top mx-auto d-bloc" alt="..." />
+              <h1 className='Header1'>News</h1>
+              <div className="card cardNews">
+                <img src={avenger} className="imgNews card-img-top mx-auto d-bloc" alt="..."  />
                 <div className="card-body">
                   <h5 className="card-title">News 1</h5>
                   <p className="card-text">this is news section ..............</p>
                   <a href="#" id="btnMoreDetails" className="btn btn-warning"><i id="iUser" className="bi bi-bookmark-plus-fill"></i>know more</a>
                 </div>
               </div>
-              <div id="cardMovieWraper" className="card ">
-                <img src={avenger} className="card-img-top mx-auto d-bloc" alt="..." />
+              <div className="card cardNews">
+                <img src={item3} className="imgNews card-img-top mx-auto d-bloc" alt="..."  />
                 <div className="card-body">
                   <h5 className="card-title">News 1</h5>
                   <p className="card-text">this is news section ..............</p>
                   <a href="#" id="btnMoreDetails" className="btn btn-warning"><i id="iUser" className="bi bi-bookmark-plus-fill"></i>know more</a>
                 </div>
               </div>
-              <div id="cardMovieWraper" className="card ">
-                <img src={avenger} className="card-img-top mx-auto d-bloc" alt="..." />
+              <div className="card cardNews">
+                <img src={avenger} className="imgNews card-img-top mx-auto d-bloc" alt="..."  />
                 <div className="card-body">
                   <h5 className="card-title">News 1</h5>
                   <p className="card-text">this is news section ..............</p>
                   <a href="#" id="btnMoreDetails" className="btn btn-warning"><i id="iUser" className="bi bi-bookmark-plus-fill"></i>know more</a>
                 </div>
               </div>
-              <div id="cardMovieWraper" className="card ">
-                <img src={avenger} className="card-img mx-auto d-bloc" alt="..." />
+              <div className="card cardNews">
+                <img src={avenger} className="imgNews card-img-top mx-auto d-bloc" alt="..."  />
                 <div className="card-body">
                   <h5 className="card-title">News 1</h5>
                   <p className="card-text">this is news section ..............</p>
@@ -43,7 +43,7 @@ class News extends Component {
                 </div>
               </div>
             </div>
-            
+
           </div>
           <div id="card" className="col-3 mt-4">
             <h1 className="Header1">Reviews</h1>
