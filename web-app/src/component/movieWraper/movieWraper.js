@@ -31,7 +31,7 @@ class MoviesWraper extends Component {
     render() {
 
         return (
-            <div className="header">
+            <div className="login">
                 <div className="container">
                     <div className="row pt-5 ">
                         <div id="rowCollapse" className="row col-12">
